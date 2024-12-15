@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Bundle & Save</h2>
+
+    <!-- Section for Bundles -->
+    <section class="bundles">
+
+      <!-- 1 Pair Bundle -->
+      <article class="bundle-box" id="bundle1" onclick="toggleBundle(1)">
+        <div class="radio-group">
+          <input type="radio" name="bundle" id="bundle1-radio" checked aria-label="Select 1 Pair bundle"/>
+          <label for="bundle1-radio">
+            <div class="bundle-info">
+              <div class="bundle-left">
+                <span class="pair">1 Pair</span>
+                <span class="price">DKK 195.00</span>
+              </div>
+              <div class="discount">50% OFF</div>
+            </div>
+          </label>
+        </div>
+        <div class="bundle-options" id="options1">
+          <div class="dropdowns">
+            <div class="dropdown-item">
+              <label for="size1">Size</label>
+              <select id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-item">
+              <label for="color1">Colour</label>
+              <select id="color1">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 Pair Bundle -->
+      <article class="bundle-box" id="bundle2" onclick="toggleBundle(2)">
+        <div class="radio-group">
+          <input type="radio" name="bundle" id="bundle2-radio" aria-label="Select 2 Pair bundle"/>
+          <label for="bundle2-radio">
+            <div class="bundle-info">
+              <div class="bundle-left">
+                <span class="pair">2 Pair</span>
+                <span class="price">DKK 345.00</span>
+              </div>
+             
+              <div class="discount"> <div class="most-popular">Most Popular</div>40% OFF</div>
+            </div>
+          </label>
+        </div>
+        <div class="bundle-options" id="options2">
+          <div class="dropdowns">
+            <div class="dropdown-item">
+              <label for="size2">Size</label>
+              <select id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-item">
+              <label for="color2">Colour</label>
+              <select id="color2">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 Pair Bundle -->
+      <article class="bundle-box" id="bundle3" onclick="toggleBundle(3)">
+        <div class="radio-group">
+          <input type="radio" name="bundle" id="bundle3-radio" aria-label="Select 3 Pair bundle"/>
+          <label for="bundle3-radio">
+            <div class="bundle-info">
+              <div class="bundle-left">
+                <span class="pair">3 Pair</span>
+                <span class="price">DKK 528.00</span>
+              </div>
+              <div class="discount">60% OFF</div>
+            </div>
+          </label>
+        </div>
+        <div class="bundle-options" id="options3">
+          <div class="dropdowns">
+            <div class="dropdown-item">
+              <label for="size3">Size</label>
+              <select id="size3">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-item">
+              <label for="color3">Colour</label>
+              <select id="color3">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section> <!-- End of Bundles Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footerinfo">  <p class="shipping">Free 2 Day Shipping</p>
+            <p class="total">Total: <span id="totalPrice">DKK 360.00</span></p>
+        </div>
+    
+      <button class="add-to-cart">+ Add to Cart</button>
+      <p class="powered">Powered by Pumper</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
